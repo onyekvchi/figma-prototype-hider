@@ -4,8 +4,13 @@
   "description": "Hides prototypes on the 'Recent' page in Figma to allow you quickly find your working files",
   "content_scripts": [{
     "run_at": "document_end",
-    "matches": ["<all_urls>"],
+    "matches": ["https://www.figma.com/*"],
     "js": ["script.js"]
   }],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "permissions": ["webNavigation"],
   "manifest_version": 2
 }
