@@ -1,0 +1,11 @@
+{
+  "name": "Figma Prototype Hider",
+  "version": "1.0",
+  "description": "Hides prototypes on the 'Recent' page in Figma to allow you quickly find your working files",
+  "content_scripts": [{
+    "run_at": "document_end",
+    "matches": ["<all_urls>"],
+    "js": ["script.js"]
+  }],
+  "manifest_version": 2
+}
